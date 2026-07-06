@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The Place I Saved For You 🤍</title>
+<title>The Place I Saved For You</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#fdfaf6;
+font-family:Poppins,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:25px;
+}
+
+.container{
+max-width:420px;
+text-align:center;
+}
+
+.hero{
+width:100%;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+margin-bottom:30px;
+}
+
+h1{
+font-family:"Cormorant Garamond",serif;
+font-size:42px;
+margin-bottom:15px;
+color:#3b2e2e;
+}
+
+p{
+font-size:16px;
+line-height:1.8;
+color:#666;
+margin-bottom:35px;
+}
+
+button{
+padding:16px 35px;
+font-size:16px;
+border:none;
+border-radius:40px;
+background:#3b2e2e;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+</style>
 
 </head>
 
 <body>
 
-<section class="hero">
+<div class="container">
 
-<div class="glass">
+<img src="assets/photos/childhood1.png" class="hero">
 
-<h1>The Place I Saved For You</h1>
+<h1>The Place I Saved For You 🤍</h1>
 
-<p class="subtitle">
-Not every bond begins at birth.
-<br><br>
-Some people quietly become family...
-without sharing the same blood.
+<p>
+Some people post memories online.
+I kept ours in one little place...
+just for you.
 </p>
 
-<img src="assets/photos/childhood1.png"
-class="main-photo">
-
-<button id="enterBtn">
-Begin Our Story 🤍
+<a href="pages/memories.html">
+<button>
+Enter →
 </button>
+</a>
 
 </div>
 
-</section>
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
