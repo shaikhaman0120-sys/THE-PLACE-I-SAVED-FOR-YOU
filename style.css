@@ -92,3 +92,58 @@ transform:translateY(0);
 }
 
 }
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff8f5,#f8f1ff);
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero{
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    margin:25px auto;
+    display:block;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.photo{
+    width:170px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.photo:hover{
+    transform:scale(1.05);
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#111;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#333;
+}
