@@ -1,1 +1,82 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#f8f4ef,#efe8df);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.overlay{
+width:100%;
+padding:20px;
+display:flex;
+justify-content:center;
+}
+
+.card{
+max-width:420px;
+width:100%;
+background:white;
+padding:35px 25px;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+text-align:center;
+animation:fade 1s ease;
+}
+
+.hero{
+width:100%;
+border-radius:18px;
+margin:22px 0;
+object-fit:cover;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+margin-bottom:15px;
+color:#2d2d2d;
+}
+
+.quote{
+font-size:16px;
+color:#666;
+line-height:1.7;
+}
+
+button{
+margin-top:20px;
+padding:14px 32px;
+border:none;
+border-radius:50px;
+background:#1f1f1f;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+background:#000;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
